@@ -282,6 +282,7 @@ DIN A4, landscape with location and doc. field</description>
 <pad name="9" x="-4" y="1.5" drill="0.7" rot="R90"/>
 <pad name="SH1" x="-6.57" y="-2" drill="2.3" rot="R90"/>
 <pad name="SH2" x="6.57" y="-2" drill="2.3" rot="R90"/>
+<wire x1="-7.2" y1="-13.78" x2="7.2" y2="-13.78" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -696,6 +697,64 @@ DIN A4, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="G091208300LF">
+<packages>
+<package name="G091208300LF">
+<pad name="1" x="-3.81" y="1.55" drill="0.75" shape="long" rot="R90"/>
+<pad name="2" x="-2.54" y="0.55" drill="0.75" shape="long" rot="R90"/>
+<pad name="3" x="-1.27" y="0.55" drill="0.75" shape="long" rot="R90"/>
+<pad name="4" x="0" y="1.55" drill="0.75" shape="long" rot="R90"/>
+<pad name="5" x="1.27" y="0.55" drill="0.75" shape="long" rot="R90"/>
+<pad name="6" x="2.54" y="0.55" drill="0.75" shape="long" rot="R90"/>
+<pad name="7" x="3.81" y="1.55" drill="0.75" shape="long" rot="R90"/>
+<hole x="-7.2" y="0.4" drill="1.4"/>
+<hole x="7.2" y="-0.5" drill="1.7"/>
+<pad name="P$1" x="-9.2" y="2.9" drill="1.7" rot="R90"/>
+<pad name="P$2" x="9.2" y="2.9" drill="1.7" rot="R90"/>
+<pad name="P$3" x="9.2" y="-6.1" drill="1.7" rot="R90"/>
+<pad name="P$4" x="-9.2" y="-6.1" drill="1.7" rot="R90"/>
+<wire x1="-10.16" y1="-10" x2="10.16" y2="-10" width="0.1524" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ESATA">
+<pin name="GND@0" x="-5.08" y="15.24" length="middle"/>
+<pin name="TX_P" x="-5.08" y="10.16" length="middle"/>
+<pin name="TX_N" x="-5.08" y="5.08" length="middle"/>
+<pin name="GND@1" x="-5.08" y="0" length="middle"/>
+<pin name="RX-" x="-5.08" y="-5.08" length="middle"/>
+<pin name="RX+" x="-5.08" y="-10.16" length="middle"/>
+<pin name="GND@2" x="-5.08" y="-15.24" length="middle"/>
+<wire x1="0" y1="17.78" x2="12.7" y2="17.78" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="12.7" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="0" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="0" y1="-17.78" x2="0" y2="17.78" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="G091208300LF">
+<gates>
+<gate name="G$1" symbol="ESATA" x="-7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="G091208300LF">
+<connects>
+<connect gate="G$1" pin="GND@0" pad="1"/>
+<connect gate="G$1" pin="GND@1" pad="4"/>
+<connect gate="G$1" pin="GND@2" pad="7"/>
+<connect gate="G$1" pin="RX+" pad="6"/>
+<connect gate="G$1" pin="RX-" pad="5"/>
+<connect gate="G$1" pin="TX_N" pad="3"/>
+<connect gate="G$1" pin="TX_P" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -723,6 +782,8 @@ DIN A4, landscape with location and doc. field</description>
 <part name="U$1" library="usb3_idc" deviceset="USB_IDC" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$2" library="G091208300LF" deviceset="G091208300LF" device=""/>
+<part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -919,109 +980,133 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="185.42" y1="53.34" x2="185.42" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="P2_D_N" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="D-"/>
 <wire x1="66.04" y1="121.92" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="121.92" x2="182.88" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P2_D_N"/>
 <wire x1="182.88" y1="119.38" x2="187.96" y2="119.38" width="0.1524" layer="91"/>
+<label x="81.28" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="P2_D_P" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P2_D_P"/>
 <wire x1="187.96" y1="114.3" x2="180.34" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="114.3" x2="180.34" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="D+"/>
 <wire x1="180.34" y1="119.38" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
+<label x="81.28" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="P2_SSRX_N" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P2_SSRX_N"/>
 <wire x1="187.96" y1="109.22" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="109.22" x2="172.72" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="SSRX-"/>
 <wire x1="172.72" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
+<label x="81.28" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="P2_SSRX_P" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="SSRX+"/>
 <wire x1="66.04" y1="111.76" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="111.76" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P2_SSRX_P"/>
 <wire x1="170.18" y1="104.14" x2="187.96" y2="104.14" width="0.1524" layer="91"/>
+<label x="81.28" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="P2_SSTX_N" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="SSTX-"/>
 <wire x1="66.04" y1="106.68" x2="167.64" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P2_SSTX_N"/>
 <wire x1="167.64" y1="106.68" x2="167.64" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="99.06" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
+<label x="81.28" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="P2_SSTX_P" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="SSTX+"/>
 <wire x1="66.04" y1="104.14" x2="165.1" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="104.14" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P2_SSTX_P"/>
 <wire x1="165.1" y1="93.98" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
+<label x="81.28" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="P1_D_N" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="D-"/>
 <wire x1="66.04" y1="83.82" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="83.82" x2="177.8" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P1_D_N"/>
 <wire x1="177.8" y1="86.36" x2="187.96" y2="86.36" width="0.1524" layer="91"/>
+<label x="81.28" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="P1_D_P" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P1_D_P"/>
 <pinref part="J4" gate="G$1" pin="D+"/>
 <wire x1="187.96" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
+<label x="81.28" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="P1_SSRX_N" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="SSRX-"/>
 <pinref part="U$1" gate="G$1" pin="P1_SSRX_N"/>
 <wire x1="66.04" y1="76.2" x2="187.96" y2="76.2" width="0.1524" layer="91"/>
+<label x="81.28" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="P1_SSRX_P" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P1_SSRX_P"/>
 <pinref part="J4" gate="G$1" pin="SSRX+"/>
 <wire x1="187.96" y1="71.12" x2="187.96" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="73.66" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
+<label x="81.28" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="P1_SSTX_N" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="SSTX-"/>
 <wire x1="66.04" y1="68.58" x2="182.88" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="68.58" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P1_SSTX_N"/>
 <wire x1="182.88" y1="66.04" x2="187.96" y2="66.04" width="0.1524" layer="91"/>
+<label x="81.28" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="P1_SSTX_P" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P1_SSTX_P"/>
 <wire x1="187.96" y1="60.96" x2="177.8" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="J4" gate="G$1" pin="SSTX+"/>
 <wire x1="177.8" y1="60.96" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="66.04" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
+<label x="81.28" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="U$2" gate="G$1" x="53.34" y="68.58" rot="MR0"/>
+<instance part="FRAME3" gate="G$1" x="0" y="0"/>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
