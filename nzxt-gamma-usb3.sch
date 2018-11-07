@@ -486,143 +486,6 @@ DIN A4, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="usb3_idc">
-<packages>
-<package name="USB3_IDC">
-<pad name="6" x="1" y="0" drill="0.8"/>
-<pad name="5" x="-1" y="0" drill="0.8"/>
-<pad name="7" x="3" y="0" drill="0.8"/>
-<pad name="8" x="5" y="0" drill="0.8"/>
-<pad name="9" x="7" y="0" drill="0.8"/>
-<pad name="10" x="9" y="0" drill="0.8"/>
-<pad name="11" x="9" y="-2" drill="0.8"/>
-<pad name="12" x="7" y="-2" drill="0.8"/>
-<pad name="13" x="5" y="-2" drill="0.8"/>
-<pad name="14" x="3" y="-2" drill="0.8"/>
-<pad name="15" x="1" y="-2" drill="0.8"/>
-<pad name="16" x="-1" y="-2" drill="0.8"/>
-<pad name="4" x="-3" y="0" drill="0.8"/>
-<pad name="17" x="-3" y="-2" drill="0.8"/>
-<pad name="3" x="-5" y="0" drill="0.8"/>
-<pad name="18" x="-5" y="-2" drill="0.8"/>
-<pad name="2" x="-7" y="0" drill="0.8"/>
-<pad name="19" x="-7" y="-2" drill="0.8"/>
-<pad name="1" x="-9" y="0" drill="0.8"/>
-</package>
-</packages>
-<symbols>
-<symbol name="USB3_IDC">
-<pin name="VBUS" x="-12.7" y="35.56" length="middle"/>
-<pin name="P2_SSRX_N" x="-12.7" y="17.78" length="middle"/>
-<pin name="P2_SSRX_P" x="-12.7" y="12.7" length="middle"/>
-<pin name="GND" x="-12.7" y="-38.1" length="middle"/>
-<pin name="P2_SSTX_P" x="-12.7" y="2.54" length="middle"/>
-<pin name="P2_SSTX_N" x="-12.7" y="7.62" length="middle"/>
-<pin name="P2_D_N" x="-12.7" y="27.94" length="middle"/>
-<pin name="P2_D_P" x="-12.7" y="22.86" length="middle"/>
-<pin name="P1_SSRX_N" x="-12.7" y="-15.24" length="middle"/>
-<pin name="P1_SSRX_P" x="-12.7" y="-20.32" length="middle"/>
-<pin name="P1_SSTX_N" x="-12.7" y="-25.4" length="middle"/>
-<pin name="P1_SSTX_P" x="-12.7" y="-30.48" length="middle"/>
-<pin name="P1_D_N" x="-12.7" y="-5.08" length="middle"/>
-<pin name="P1_D_P" x="-12.7" y="-10.16" length="middle"/>
-<wire x1="-7.62" y1="-40.64" x2="-7.62" y2="38.1" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="38.1" x2="7.62" y2="38.1" width="0.254" layer="94"/>
-<wire x1="7.62" y1="38.1" x2="7.62" y2="-40.64" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-40.64" x2="-7.62" y2="-40.64" width="0.254" layer="94"/>
-<text x="-7.62" y="40.64" size="1.27" layer="95" font="vector">&gt;NAME</text>
-<text x="-7.62" y="-43.18" size="1.27" layer="96" font="vector">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="USB_IDC">
-<gates>
-<gate name="G$1" symbol="USB3_IDC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="USB3_IDC">
-<connects>
-<connect gate="G$1" pin="GND" pad="4 7 13 16"/>
-<connect gate="G$1" pin="P1_D_N" pad="8"/>
-<connect gate="G$1" pin="P1_D_P" pad="9"/>
-<connect gate="G$1" pin="P1_SSRX_N" pad="2"/>
-<connect gate="G$1" pin="P1_SSRX_P" pad="3"/>
-<connect gate="G$1" pin="P1_SSTX_N" pad="5"/>
-<connect gate="G$1" pin="P1_SSTX_P" pad="6"/>
-<connect gate="G$1" pin="P2_D_N" pad="12"/>
-<connect gate="G$1" pin="P2_D_P" pad="11"/>
-<connect gate="G$1" pin="P2_SSRX_N" pad="18"/>
-<connect gate="G$1" pin="P2_SSRX_P" pad="17"/>
-<connect gate="G$1" pin="P2_SSTX_N" pad="15"/>
-<connect gate="G$1" pin="P2_SSTX_P" pad="14"/>
-<connect gate="G$1" pin="VBUS" pad="1 19"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="G091208300LF">
-<packages>
-<package name="G091208300LF">
-<pad name="1" x="-3.81" y="1.55" drill="0.75" shape="long" rot="R90"/>
-<pad name="2" x="-2.54" y="0.55" drill="0.75" shape="long" rot="R90"/>
-<pad name="3" x="-1.27" y="0.55" drill="0.75" shape="long" rot="R90"/>
-<pad name="4" x="0" y="1.55" drill="0.75" shape="long" rot="R90"/>
-<pad name="5" x="1.27" y="0.55" drill="0.75" shape="long" rot="R90"/>
-<pad name="6" x="2.54" y="0.55" drill="0.75" shape="long" rot="R90"/>
-<pad name="7" x="3.81" y="1.55" drill="0.75" shape="long" rot="R90"/>
-<hole x="-7.2" y="0.4" drill="1.4"/>
-<hole x="7.2" y="-0.5" drill="1.7"/>
-<pad name="P$1" x="-9.2" y="2.9" drill="1.7" rot="R90"/>
-<pad name="P$2" x="9.2" y="2.9" drill="1.7" rot="R90"/>
-<pad name="P$3" x="9.2" y="-6.1" drill="1.7" rot="R90"/>
-<pad name="P$4" x="-9.2" y="-6.1" drill="1.7" rot="R90"/>
-<wire x1="-10.16" y1="-10" x2="10.16" y2="-10" width="0.1524" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ESATA">
-<pin name="GND@0" x="-5.08" y="15.24" length="middle"/>
-<pin name="TX_P" x="-5.08" y="10.16" length="middle"/>
-<pin name="TX_N" x="-5.08" y="5.08" length="middle"/>
-<pin name="GND@1" x="-5.08" y="0" length="middle"/>
-<pin name="RX-" x="-5.08" y="-5.08" length="middle"/>
-<pin name="RX+" x="-5.08" y="-10.16" length="middle"/>
-<pin name="GND@2" x="-5.08" y="-15.24" length="middle"/>
-<wire x1="0" y1="17.78" x2="12.7" y2="17.78" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="17.78" x2="12.7" y2="-17.78" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-17.78" x2="0" y2="-17.78" width="0.1524" layer="94"/>
-<wire x1="0" y1="-17.78" x2="0" y2="17.78" width="0.1524" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="G091208300LF">
-<gates>
-<gate name="G$1" symbol="ESATA" x="-7.62" y="0"/>
-</gates>
-<devices>
-<device name="" package="G091208300LF">
-<connects>
-<connect gate="G$1" pin="GND@0" pad="1"/>
-<connect gate="G$1" pin="GND@1" pad="4"/>
-<connect gate="G$1" pin="GND@2" pad="7"/>
-<connect gate="G$1" pin="RX+" pad="6"/>
-<connect gate="G$1" pin="RX-" pad="5"/>
-<connect gate="G$1" pin="TX_N" pad="3"/>
-<connect gate="G$1" pin="TX_P" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="dylans-parts" urn="urn:adsk.eagle:library:6331967">
 <packages>
 <package name="CUI_SJ1-3545N" urn="urn:adsk.eagle:footprint:6331968/1" library_version="2" library_locally_modified="yes">
@@ -680,7 +543,7 @@ DIN A4, landscape with location and doc. field</description>
 <hole x="0" y="-5" drill="1.6"/>
 <hole x="0" y="5" drill="1.6"/>
 </package>
-<package name="0678007001" urn="urn:adsk.eagle:footprint:6332268/1" library_version="4">
+<package name="0678007001" urn="urn:adsk.eagle:footprint:6332268/2" library_version="5">
 <pad name="7" x="-3.81" y="-1.5" drill="0.74"/>
 <pad name="6" x="-2.54" y="0" drill="0.74"/>
 <pad name="5" x="-1.27" y="0" drill="0.74"/>
@@ -690,6 +553,72 @@ DIN A4, landscape with location and doc. field</description>
 <pad name="1" x="3.81" y="-1.5" drill="0.74"/>
 <pad name="MH1" x="6.27" y="0" drill="1.35"/>
 <pad name="MH2" x="-6.56" y="1" drill="1.35"/>
+<text x="-8.32" y="-4.51" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-8.45" y1="-3.05" x2="8.45" y2="-3.05" width="0.127" layer="21"/>
+<wire x1="-8.45" y1="3.4" x2="8.45" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-8.45" y1="3.4" x2="-8.45" y2="-3.05" width="0.127" layer="21"/>
+<wire x1="8.45" y1="3.4" x2="8.45" y2="-3.05" width="0.127" layer="21"/>
+<wire x1="-8.9" y1="3.9" x2="-8.9" y2="-3.5" width="0.127" layer="39"/>
+<wire x1="-8.9" y1="-3.5" x2="9" y2="-3.5" width="0.127" layer="39"/>
+<wire x1="9" y1="-3.5" x2="9" y2="3.9" width="0.127" layer="39"/>
+<wire x1="9" y1="3.9" x2="-8.9" y2="3.9" width="0.127" layer="39"/>
+</package>
+<package name="G091208300LF" urn="urn:adsk.eagle:footprint:6332210/2" library_version="5">
+<pad name="1" x="-3.81" y="1.55" drill="0.75" shape="long" rot="R90"/>
+<pad name="2" x="-2.54" y="0.55" drill="0.75" shape="long" rot="R90"/>
+<pad name="3" x="-1.27" y="0.55" drill="0.75" shape="long" rot="R90"/>
+<pad name="4" x="0" y="1.55" drill="0.75" shape="long" rot="R90"/>
+<pad name="5" x="1.27" y="0.55" drill="0.75" shape="long" rot="R90"/>
+<pad name="6" x="2.54" y="0.55" drill="0.75" shape="long" rot="R90"/>
+<pad name="7" x="3.81" y="1.55" drill="0.75" shape="long" rot="R90"/>
+<pad name="P$1" x="-9.2" y="2.9" drill="1.7" rot="R90"/>
+<pad name="P$2" x="9.2" y="2.9" drill="1.7" rot="R90"/>
+<pad name="P$3" x="9.2" y="-6.1" drill="1.7" rot="R90"/>
+<pad name="P$4" x="-9.2" y="-6.1" drill="1.7" rot="R90"/>
+<hole x="-7.2" y="0.4" drill="1.4"/>
+<hole x="7.2" y="-0.5" drill="1.7"/>
+<wire x1="-9.35" y1="-10" x2="9.35" y2="-10" width="0.127" layer="21"/>
+<wire x1="-9.35" y1="-7.7" x2="-9.35" y2="-10" width="0.127" layer="21"/>
+<wire x1="-9.35" y1="-4.6" x2="-9.35" y2="1.3" width="0.127" layer="21"/>
+<wire x1="9.35" y1="-10" x2="9.35" y2="-7.6" width="0.127" layer="21"/>
+<wire x1="9.35" y1="-4.6" x2="9.35" y2="1.4" width="0.127" layer="21"/>
+<wire x1="7.4" y1="3.6" x2="-7.6" y2="3.6" width="0.127" layer="21"/>
+<text x="-7.6" y="4.2" size="1.27" layer="25" font="vector">&gt;NAME</text>
+</package>
+<package name="USB3_IDC" urn="urn:adsk.eagle:footprint:6332212/2" library_version="5">
+<pad name="6" x="1" y="0" drill="0.8"/>
+<pad name="5" x="-1" y="0" drill="0.8"/>
+<pad name="7" x="3" y="0" drill="0.8"/>
+<pad name="8" x="5" y="0" drill="0.8"/>
+<pad name="9" x="7" y="0" drill="0.8"/>
+<pad name="10" x="9" y="0" drill="0.8"/>
+<pad name="11" x="9" y="-2" drill="0.8"/>
+<pad name="12" x="7" y="-2" drill="0.8"/>
+<pad name="13" x="5" y="-2" drill="0.8"/>
+<pad name="14" x="3" y="-2" drill="0.8"/>
+<pad name="15" x="1" y="-2" drill="0.8"/>
+<pad name="16" x="-1" y="-2" drill="0.8"/>
+<pad name="4" x="-3" y="0" drill="0.8"/>
+<pad name="17" x="-3" y="-2" drill="0.8"/>
+<pad name="3" x="-5" y="0" drill="0.8"/>
+<pad name="18" x="-5" y="-2" drill="0.8"/>
+<pad name="2" x="-7" y="0" drill="0.8"/>
+<pad name="19" x="-7" y="-2" drill="0.8"/>
+<pad name="1" x="-9" y="0" drill="0.8"/>
+<wire x1="-12.35" y1="1" x2="12.35" y2="1" width="0.127" layer="21"/>
+<wire x1="-12.35" y1="-10" x2="-1.175" y2="-10" width="0.127" layer="21"/>
+<wire x1="-1.175" y1="-10" x2="1.175" y2="-10" width="0.127" layer="21"/>
+<wire x1="1.175" y1="-10" x2="12.35" y2="-10" width="0.127" layer="21"/>
+<wire x1="-12.35" y1="1" x2="-12.35" y2="-10" width="0.127" layer="21"/>
+<wire x1="12.35" y1="1" x2="12.35" y2="-10" width="0.127" layer="21"/>
+<wire x1="1.175" y1="-10" x2="1.175" y2="-6" width="0.127" layer="21"/>
+<wire x1="1.175" y1="-6" x2="-1.175" y2="-6" width="0.127" layer="21"/>
+<wire x1="-1.175" y1="-6" x2="-1.175" y2="-10" width="0.127" layer="21"/>
+<wire x1="13" y1="-11" x2="-13" y2="-11" width="0.127" layer="39"/>
+<wire x1="-13" y1="-11" x2="-13" y2="2" width="0.127" layer="39"/>
+<wire x1="-13" y1="2" x2="13" y2="2" width="0.127" layer="39"/>
+<wire x1="13" y1="2" x2="13" y2="-11" width="0.127" layer="39"/>
+<text x="-12" y="2" size="1.27" layer="25" font="vector">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -698,9 +627,19 @@ DIN A4, landscape with location and doc. field</description>
 <packageinstance name="CUI_SJ1-3545N"/>
 </packageinstances>
 </package3d>
-<package3d name="0678007001" urn="urn:adsk.eagle:package:6332269/1" type="box" library_version="4">
+<package3d name="0678007001" urn="urn:adsk.eagle:package:6332269/3" type="model" library_version="5">
 <packageinstances>
 <packageinstance name="0678007001"/>
+</packageinstances>
+</package3d>
+<package3d name="G091208300LF" urn="urn:adsk.eagle:package:6332216/2" type="box" library_version="5">
+<packageinstances>
+<packageinstance name="G091208300LF"/>
+</packageinstances>
+</package3d>
+<package3d name="USB3_IDC" urn="urn:adsk.eagle:package:6332218/2" type="box" library_version="5">
+<packageinstances>
+<packageinstance name="USB3_IDC"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -763,6 +702,28 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="12.7" y1="-17.78" x2="0" y2="-17.78" width="0.1524" layer="94"/>
 <wire x1="0" y1="-17.78" x2="0" y2="17.78" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="USB3_IDC" urn="urn:adsk.eagle:symbol:6332215/1" library_version="5">
+<pin name="VBUS" x="-12.7" y="35.56" length="middle"/>
+<pin name="P2_SSRX_N" x="-12.7" y="17.78" length="middle"/>
+<pin name="P2_SSRX_P" x="-12.7" y="12.7" length="middle"/>
+<pin name="GND" x="-12.7" y="-38.1" length="middle"/>
+<pin name="P2_SSTX_P" x="-12.7" y="2.54" length="middle"/>
+<pin name="P2_SSTX_N" x="-12.7" y="7.62" length="middle"/>
+<pin name="P2_D_N" x="-12.7" y="27.94" length="middle"/>
+<pin name="P2_D_P" x="-12.7" y="22.86" length="middle"/>
+<pin name="P1_SSRX_N" x="-12.7" y="-15.24" length="middle"/>
+<pin name="P1_SSRX_P" x="-12.7" y="-20.32" length="middle"/>
+<pin name="P1_SSTX_N" x="-12.7" y="-25.4" length="middle"/>
+<pin name="P1_SSTX_P" x="-12.7" y="-30.48" length="middle"/>
+<pin name="P1_D_N" x="-12.7" y="-5.08" length="middle"/>
+<pin name="P1_D_P" x="-12.7" y="-10.16" length="middle"/>
+<wire x1="-7.62" y1="-40.64" x2="-7.62" y2="38.1" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="38.1" x2="7.62" y2="38.1" width="0.254" layer="94"/>
+<wire x1="7.62" y1="38.1" x2="7.62" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-40.64" x2="-7.62" y2="-40.64" width="0.254" layer="94"/>
+<text x="-7.62" y="40.64" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-43.18" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SJ1-3545N" urn="urn:adsk.eagle:component:6331972/2" prefix="J" library_version="2" library_locally_modified="yes">
@@ -792,7 +753,7 @@ DIN A4, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="0678007001" urn="urn:adsk.eagle:component:6332219/2" library_version="4">
+<deviceset name="0678007001" urn="urn:adsk.eagle:component:6332219/3" prefix="J" library_version="5">
 <gates>
 <gate name="G$1" symbol="ESATA" x="-5.08" y="0"/>
 </gates>
@@ -808,13 +769,68 @@ DIN A4, landscape with location and doc. field</description>
 <connect gate="G$1" pin="TX_P" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6332269/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6332269/3"/>
 </package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="Molex"/>
 <attribute name="TYPE" value="SATA" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="G091208300LF" urn="urn:adsk.eagle:component:6332220/2" prefix="J" library_version="5">
+<gates>
+<gate name="G$1" symbol="ESATA" x="-7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="G091208300LF">
+<connects>
+<connect gate="G$1" pin="GND@0" pad="1"/>
+<connect gate="G$1" pin="GND@1" pad="4"/>
+<connect gate="G$1" pin="GND@2" pad="7"/>
+<connect gate="G$1" pin="RX+" pad="6"/>
+<connect gate="G$1" pin="RX-" pad="5"/>
+<connect gate="G$1" pin="TX_N" pad="3"/>
+<connect gate="G$1" pin="TX_P" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6332216/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB_IDC" urn="urn:adsk.eagle:component:6332222/2" prefix="J" library_version="5">
+<gates>
+<gate name="G$1" symbol="USB3_IDC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="USB3_IDC">
+<connects>
+<connect gate="G$1" pin="GND" pad="4 7 13 16"/>
+<connect gate="G$1" pin="P1_D_N" pad="8"/>
+<connect gate="G$1" pin="P1_D_P" pad="9"/>
+<connect gate="G$1" pin="P1_SSRX_N" pad="2"/>
+<connect gate="G$1" pin="P1_SSRX_P" pad="3"/>
+<connect gate="G$1" pin="P1_SSTX_N" pad="5"/>
+<connect gate="G$1" pin="P1_SSTX_P" pad="6"/>
+<connect gate="G$1" pin="P2_D_N" pad="12"/>
+<connect gate="G$1" pin="P2_D_P" pad="11"/>
+<connect gate="G$1" pin="P2_SSRX_N" pad="18"/>
+<connect gate="G$1" pin="P2_SSRX_P" pad="17"/>
+<connect gate="G$1" pin="P2_SSTX_N" pad="15"/>
+<connect gate="G$1" pin="P2_SSTX_P" pad="14"/>
+<connect gate="G$1" pin="VBUS" pad="1 19"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6332218/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -845,12 +861,12 @@ DIN A4, landscape with location and doc. field</description>
 <part name="AGND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="AGND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="AGND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
-<part name="U$1" library="usb3_idc" deviceset="USB_IDC" device=""/>
+<part name="U$1" library="dylans-parts" library_urn="urn:adsk.eagle:library:6331967" deviceset="USB_IDC" device="" package3d_urn="urn:adsk.eagle:package:6332218/2"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$2" library="G091208300LF" deviceset="G091208300LF" device=""/>
+<part name="U$2" library="dylans-parts" library_urn="urn:adsk.eagle:library:6331967" deviceset="G091208300LF" device="" package3d_urn="urn:adsk.eagle:package:6332216/2"/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="U$3" library="dylans-parts" library_urn="urn:adsk.eagle:library:6331967" deviceset="0678007001" device="" package3d_urn="urn:adsk.eagle:package:6332269/1"/>
+<part name="U$3" library="dylans-parts" library_urn="urn:adsk.eagle:library:6331967" deviceset="0678007001" device="" package3d_urn="urn:adsk.eagle:package:6332269/3"/>
 </parts>
 <sheets>
 <sheet>
