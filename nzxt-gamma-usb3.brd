@@ -366,7 +366,7 @@
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="AllPCB_2Layer">
+<designrules name="AllPCB_2Layer *">
 <description language="de">
 
 
@@ -433,7 +433,7 @@ Setup for &lt;b&gt;2-layer Standard Class&lt;/b&gt;
 <param name="rlMaxPadInner" value="2.5mm"/>
 <param name="rlMinPadBottom" value="0.175mm"/>
 <param name="rlMaxPadBottom" value="2.5mm"/>
-<param name="rlMinViaOuter" value="0.125mm"/>
+<param name="rlMinViaOuter" value="0.15mm"/>
 <param name="rlMaxViaOuter" value="2.5mm"/>
 <param name="rlMinViaInner" value="0.125mm"/>
 <param name="rlMaxViaInner" value="2.5mm"/>
@@ -984,37 +984,37 @@ Setup for &lt;b&gt;2-layer Standard Class&lt;/b&gt;
 <signal name="N$9">
 <contactref element="U$2" pad="1"/>
 <contactref element="U$3" pad="1"/>
-<wire x1="18.01" y1="1.9" x2="18.01" y2="11.45" width="0" layer="19" extent="1-1"/>
+<wire x1="18.01" y1="1.9" x2="18.01" y2="11.45" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$10">
 <contactref element="U$2" pad="4"/>
 <contactref element="U$3" pad="4"/>
-<wire x1="14.2" y1="1.9" x2="14.2" y2="11.45" width="0" layer="19" extent="1-1"/>
+<wire x1="14.2" y1="1.9" x2="14.2" y2="11.45" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$11">
 <contactref element="U$3" pad="7"/>
 <contactref element="U$2" pad="7"/>
-<wire x1="10.39" y1="1.9" x2="10.39" y2="11.45" width="0" layer="19" extent="1-1"/>
+<wire x1="10.39" y1="1.9" x2="10.39" y2="11.45" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$12">
 <contactref element="U$2" pad="6"/>
 <contactref element="U$3" pad="6"/>
-<wire x1="11.66" y1="3.4" x2="11.66" y2="12.45" width="0" layer="19" extent="1-1"/>
+<wire x1="11.66" y1="3.4" x2="11.66" y2="12.45" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$13">
 <contactref element="U$3" pad="5"/>
 <contactref element="U$2" pad="5"/>
-<wire x1="12.93" y1="3.4" x2="12.93" y2="12.45" width="0" layer="19" extent="1-1"/>
+<wire x1="12.93" y1="3.4" x2="12.93" y2="12.45" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$14">
 <contactref element="U$2" pad="3"/>
 <contactref element="U$3" pad="3"/>
-<wire x1="15.47" y1="3.4" x2="15.47" y2="12.45" width="0" layer="19" extent="1-1"/>
+<wire x1="15.47" y1="3.4" x2="15.47" y2="12.45" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$15">
 <contactref element="U$3" pad="2"/>
 <contactref element="U$2" pad="2"/>
-<wire x1="16.74" y1="3.4" x2="16.74" y2="12.45" width="0" layer="19" extent="1-1"/>
+<wire x1="16.74" y1="3.4" x2="16.74" y2="12.45" width="0.1524" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
