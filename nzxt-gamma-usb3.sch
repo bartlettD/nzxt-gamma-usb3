@@ -488,7 +488,7 @@ DIN A4, landscape with location and doc. field</description>
 </library>
 <library name="dylans-parts" urn="urn:adsk.eagle:library:6331967">
 <packages>
-<package name="CUI_SJ1-3545N" urn="urn:adsk.eagle:footprint:6331968/1" library_version="2" library_locally_modified="yes">
+<package name="CUI_SJ1-3545N" urn="urn:adsk.eagle:footprint:6331968/2" library_version="6">
 <wire x1="-0.5" y1="0.75" x2="0.5" y2="0.75" width="0" layer="46"/>
 <wire x1="0.5" y1="0.75" x2="0.5" y2="-0.75" width="0" layer="46"/>
 <wire x1="0.5" y1="-0.75" x2="-0.5" y2="-0.75" width="0" layer="46"/>
@@ -622,7 +622,7 @@ DIN A4, landscape with location and doc. field</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="CUI_SJ1-3545N" urn="urn:adsk.eagle:package:6331970/2" type="model" library_version="2" library_locally_modified="yes">
+<package3d name="CUI_SJ1-3545N" urn="urn:adsk.eagle:package:6331970/3" type="model" library_version="6">
 <packageinstances>
 <packageinstance name="CUI_SJ1-3545N"/>
 </packageinstances>
@@ -726,7 +726,7 @@ DIN A4, landscape with location and doc. field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SJ1-3545N" urn="urn:adsk.eagle:component:6331972/2" prefix="J" library_version="2" library_locally_modified="yes">
+<deviceset name="SJ1-3545N" urn="urn:adsk.eagle:component:6331972/3" prefix="J" library_version="6">
 <description>3.5 mm Right-Angle Stereo Jack, 5 Pin PCB Mount, Non-Threaded</description>
 <gates>
 <gate name="G$1" symbol="SJ1-3545N" x="0" y="0"/>
@@ -741,7 +741,7 @@ DIN A4, landscape with location and doc. field</description>
 <connect gate="G$1" pin="5" pad="5"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6331970/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6331970/3"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -848,8 +848,8 @@ DIN A4, landscape with location and doc. field</description>
 </classes>
 <parts>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="J1" library="dylans-parts" library_urn="urn:adsk.eagle:library:6331967" deviceset="SJ1-3545N" device="" package3d_urn="urn:adsk.eagle:package:6331970/2"/>
-<part name="J2" library="dylans-parts" library_urn="urn:adsk.eagle:library:6331967" deviceset="SJ1-3545N" device="" package3d_urn="urn:adsk.eagle:package:6331970/2"/>
+<part name="J1" library="dylans-parts" library_urn="urn:adsk.eagle:library:6331967" deviceset="SJ1-3545N" device="" package3d_urn="urn:adsk.eagle:package:6331970/3"/>
+<part name="J2" library="dylans-parts" library_urn="urn:adsk.eagle:library:6331967" deviceset="SJ1-3545N" device="" package3d_urn="urn:adsk.eagle:package:6331970/3"/>
 <part name="J3" library="GSB311131HR" deviceset="GSB311131HR" device=""/>
 <part name="J4" library="GSB311131HR" deviceset="GSB311131HR" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
@@ -875,6 +875,9 @@ DIN A4, landscape with location and doc. field</description>
 <text x="177.8" y="104.14" size="1.778" layer="97" font="vector">NC</text>
 <text x="71.12" y="142.24" size="1.778" layer="97" font="vector">Headphone</text>
 <text x="71.12" y="93.98" size="1.778" layer="97" font="vector">MIC</text>
+<text x="10.16" y="109.22" size="1.778" layer="97" font="vector" align="top-left">Incorrect Part:
+Should be Isolated-Floating as per Intel specifation.
+Original Part cannot be sourced but SJ1-3545N is identical footprint</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -926,7 +929,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="93.98" y1="93.98" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="SENSE_1_RET" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="10"/>
 <wire x1="193.04" y1="99.06" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
@@ -944,7 +947,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="198.12" y1="76.2" x2="91.44" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="P_2_L" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="124.46" x2="93.98" y2="124.46" width="0.1524" layer="91"/>
@@ -953,7 +956,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="93.98" y1="106.68" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="SENSE_2_RET" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
 <wire x1="185.42" y1="109.22" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
@@ -962,7 +965,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="96.52" y1="127" x2="91.44" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="P_1_R" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="7"/>
 <wire x1="185.42" y1="101.6" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
@@ -983,7 +986,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="142.24" y1="81.28" x2="91.44" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="SENSE1_1_SEND" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
 <wire x1="198.12" y1="109.22" x2="193.04" y2="109.22" width="0.1524" layer="91"/>
@@ -994,7 +997,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="198.12" y1="116.84" x2="198.12" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="P_2_R" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="193.04" y1="106.68" x2="200.66" y2="106.68" width="0.1524" layer="91"/>
@@ -1226,6 +1229,7 @@ DIN A4, landscape with location and doc. field</description>
 </sheet>
 <sheet>
 <plain>
+<text x="218.44" y="20.32" size="1.778" layer="94" font="vector">eSATA</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="76.2" y="99.06" smashed="yes" rot="MR0"/>
@@ -1294,6 +1298,10 @@ DIN A4, landscape with location and doc. field</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
