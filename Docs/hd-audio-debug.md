@@ -11,20 +11,27 @@ The CUI SJ1-3545N connectors are mechanically identical to the original
 connectors and were expected to be a zero-effort substitution.
 
 This was not the case.
+
 ## Connection issues
 During testing of the audio portion of the circuit, the PC reported constant 
 disconnection and reconnection of a device when a set of headphones were 
 connected to the jack.
 
-After some investigation I came across Intel's "Front-Panel IO Design Guide" 
+After some investigation I came across Intel's [Front-Panel IO Design Guide](Intel_Front_Panel_IO_Connectivity_Design_Guide.pdf)
 which describes the theory of operation behind the HD Audio interface standard.
 
 ### HD Audio Device Sensing
 
+![ Intel® HD Audio Front Panel Dongle Implementation](hd-audio-dongle-implementation.PNG)
+_Figure 1: Intel® HD Audio Front Panel Dongle Implementation_
+
+
+
 ## Solution
 In this case, a suitable replacement connector which met the specific 
-mechanical requirements of this project could not be found.
+mechanical requirements of the project, as well as the requirement for a 
+Normally Open Isolated Switch could not be found.
 
-So I stole the old connectors from the original board. :man_shrugging:
+So I stole the old connectors from the original board.:man_shrugging:
 
 This was a good lesson in verifying even what is expected to be trivial.
