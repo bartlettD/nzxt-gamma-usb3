@@ -25,6 +25,6 @@ which describes the theory of operation behind the HD Audio interface standard.
 In this case, a suitable replacement connector which met the specific 
 mechanical requirements of this project could not be found.
 
-So I stole the old connectors from the original board. :shrug:
+So I stole the old connectors from the original board. :man_shrugging:
 
 This was a good lesson in verifying even what is expected to be trivial.
