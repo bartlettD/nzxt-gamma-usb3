@@ -3,7 +3,7 @@
 <eagle version="9.2.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -871,11 +871,11 @@ DIN A4, landscape with location and doc. field</description>
 <sheets>
 <sheet>
 <plain>
-<text x="218.44" y="20.32" size="1.778" layer="94" font="vector">Audio Interface</text>
+<text x="218.44" y="20.32" size="1.778" layer="94">Audio Interface</text>
 <text x="177.8" y="104.14" size="1.778" layer="97" font="vector">NC</text>
 <text x="71.12" y="142.24" size="1.778" layer="97" font="vector">Headphone</text>
 <text x="71.12" y="93.98" size="1.778" layer="97" font="vector">MIC</text>
-<text x="10.16" y="109.22" size="1.778" layer="97" font="vector" align="top-left">Incorrect Part:
+<text x="10.16" y="109.22" size="1.778" layer="97" align="top-left">Incorrect Part:
 Should be Isolated-Floating as per Intel specifation.
 Original Part cannot be sourced but SJ1-3545N is identical footprint</text>
 </plain>
@@ -1012,7 +1012,7 @@ Original Part cannot be sourced but SJ1-3545N is identical footprint</text>
 </sheet>
 <sheet>
 <plain>
-<text x="218.44" y="20.32" size="1.778" layer="94" font="vector">USB</text>
+<text x="218.44" y="20.32" size="1.778" layer="94">USB</text>
 </plain>
 <instances>
 <instance part="J3" gate="G$1" x="53.34" y="111.76" smashed="yes" rot="MR0">
