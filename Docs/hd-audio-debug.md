@@ -22,10 +22,25 @@ which describes the theory of operation behind the HD Audio interface standard.
 
 ### HD Audio Device Sensing
 
+The Intel HD Audio interface allows front panel jacks to signal user connection 
+and disconnection to the Operating System using the SENSE_SEND signal of the 
+header.
+
+_Figure 1_ shows Intel's reference implementation of a Front-Panel dongle using 
+the HD Audio interface, showing the connections from the dongle header to the 
+indiviual audio jacks.
+
 ![ Intel® HD Audio Front Panel Dongle Implementation](hd-audio-dongle-implementation.PNG)
 _Figure 1: Intel® HD Audio Front Panel Dongle Implementation_
 
+The previous figure shows that the reference implementation uses "Normally Open 
+Isolated Switch" style jacks that connect the SENSE_SEND signal and SENSE_RETURN
+signals together so that the CODEC on the motherboard can detect the insertion 
+of a plug into the jack.
 
+The connectors selected for this design however are normally closed against the 
+Tip and Ring pins of the plug and cause the CODEC to malfunction and cause the 
+continual connection and disconnection event generation as described earlier.
 
 ## Solution
 In this case, a suitable replacement connector which met the specific 
@@ -33,5 +48,3 @@ mechanical requirements of the project, as well as the requirement for a
 Normally Open Isolated Switch could not be found.
 
 So I stole the old connectors from the original board.:man_shrugging:
-
-This was a good lesson in verifying even what is expected to be trivial.
