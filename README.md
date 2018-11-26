@@ -22,7 +22,7 @@ However the original USB 2.0 ports have been replaced with USB 3.0 ports because
 
 [Read my tests for USB 3.0 transfers here.](/Docs/transfer-speed-test.md)
 
-Read about some debug I had to go through to get Audio working properly here
+[Read about some debug I had to go through to get Audio working properly here.](/Docs/hd-audio-debug.md)
 
 _I didn't test eSATA because nothing uses it. Putting a USB Hub and SD Card
 controller IC might be a cool upgrade for the future._
