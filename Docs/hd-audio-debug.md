@@ -30,7 +30,7 @@ _Figure 1_ shows Intel's reference implementation of a Front-Panel dongle using
 the HD Audio interface, showing the connections from the dongle header to the 
 indiviual audio jacks.
 
-![ Intel® HD Audio Front Panel Dongle Implementation](hd-audio-dongle-implementation.PNG)
+![ Intel® HD Audio Front Panel Dongle Implementation](image_assets/hd-audio-dongle-implementation.PNG)
 _Figure 1: Intel® HD Audio Front Panel Dongle Implementation_
 
 The previous figure shows that the reference implementation uses "Normally Open 

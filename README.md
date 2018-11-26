@@ -4,9 +4,9 @@ Replacement front I/O panel for NZXT GAMMA PC case with USB 3.0 ports.
 
 Designed in Autodesk EAGLE v 9.2
 
-PDF Schematics and Images are available in the "Docs" directory.
+PDF Schematics and Board Images are available in the "Docs" directory.
 
-![Raw and Assembled Board](/Docs/raw_and_assembled_board.jpg)
+![Raw and Assembled Board](/Docs/image_assets/raw_and_assembled_board.jpg)
 
 ## Features
 This is essentially a slight redesign of the original I/O panel for the case.
@@ -15,7 +15,7 @@ However the original USB 2.0 ports have been replaced with USB 3.0 ports because
 
 * Intel HD Audio Headphone and Line-in Jacks
 * 2x USB 3.0 Ports
-* eSATA connector (Did anyone use this? Maybe replace with SD Card slot one day)
+* eSATA connector _(Did anyone use this? Maybe replace with SD Card slot one day)_
 
 ## Does it work?
 **Yes!** 
