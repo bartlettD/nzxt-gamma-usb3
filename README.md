@@ -10,7 +10,8 @@ PDF Schematics and Images are available in the "Docs" directory.
 
 ## Features
 This is essentially a slight redesign of the original I/O panel for the case.
-However the original USB 2.0 ports have been replaced with USB 3.0 ports because I like faster transfers and 900mA current limits.
+However the original USB 2.0 ports have been replaced with USB 3.0 ports because
+ I like faster transfers and 900mA current limits.
 
 * Intel HD Audio Headphone and Line-in Jacks
 * 2x USB 3.0 Ports
