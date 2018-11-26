@@ -20,7 +20,7 @@ However the original USB 2.0 ports have been replaced with USB 3.0 ports because
 ## Does it work?
 **Yes!** 
 
-Read my tests for USB 3.0 transfers here.
+[Read my tests for USB 3.0 transfers here.](/Docs/transfer-speed-test.md)
 
 Read about some debug I had to go through to get Audio working properly here
 
